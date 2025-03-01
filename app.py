@@ -8,7 +8,7 @@ import seaborn as sns
 
 
 # reading the csv file
-file_path = "D:/# RASTUC CLASSES/ML Projects/1. Heart dx prediction/heart.csv"
+file_path = r'D:\RASTUC_CLASSES\ML_Projects\Heart_dx_prediction\heart.csv'
 data = pd.read_csv(file_path)
 
 # a) initial inspection
@@ -122,7 +122,7 @@ print("Accuracy:", accuracy_score(y_test, y_pred_knn))
 print(classification_report(y_test, y_pred_knn))
 
 import joblib
-joblib_path = "D:\# RASTUC CLASSES\ML Projects\1. Heart dx prediction\heart.csv\maryam.pkl"
+joblib_path = r'D:\RASTUC_CLASSES\ML_Projects\Heart_dx_prediction\maryam.pkl'
 
 joblib.dump(model, 'maryam.pkl')
 
