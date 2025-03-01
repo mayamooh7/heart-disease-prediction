@@ -163,5 +163,6 @@ if st.button("Predict"):
     # Make predictions using your loaded model
     prediction = trained_model.predict(input_data)
     st.write("Prediction:", prediction)
+    
 
 
